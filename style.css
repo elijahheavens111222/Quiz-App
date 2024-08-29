@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.question {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.options label {
+    display: block;
+    margin-bottom: 8px;
+}
+.options input {
+    margin-right: 10px;
+}
+.navigation {
+    margin-top: 20px;
+}
+.navigation button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+}
+.navigation button:disabled {
+    background-color: #ddd;
+}
+#score {
+    font-size: 1.5em;
+    color: #28a745;
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px;
+    }
+    .question {
+        font-size: 1.1em;
+    }
+    .navigation button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        height: auto;
+        padding: 10px;
+    }
+    .question {
+        font-size: 1em;
+    }
+    .navigation button {
+        font-size: 0.8em;
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 8px;
+    }
+    .question {
+        font-size: 0.9em;
+    }
+    .options input {
+        margin-right: 5px;
+    }
+    .navigation button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+    }
+    .question {
+        font-size: 0.8em;
+    }
+    .navigation button {
+        font-size: 0.7em;
+        padding: 5px 10px;
+    }
+}
